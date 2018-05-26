@@ -1,0 +1,10 @@
+PROGRAM FIRST;
+
+VAR S1: SIGNAL,
+    LST: INTEGER [0..10, 15..19]
+
+(* fdfd *)
+(***)
+(**)
+
+BEGIN END.

@@ -1,0 +1,3 @@
+/home/dimazdoks/CLionProjects/IPZ/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dimazdoks/CLionProjects/IPZ/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dimazdoks/CLionProjects/IPZ/cmake-build-debug/CMakeFiles/IPZ.dir

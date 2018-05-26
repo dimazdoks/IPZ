@@ -1,0 +1,15 @@
+PROG(***)RAM FIRS(*
+
+
+*)T;
+
+	V(*AR S1: SI*)GNAL,
+    C2: CO(*MPL *) EX,
+    IN: INTEGER,
+    FL1x: FL(*OA
+
+    *) T ext,
+    BT: BLOC ext KFLOAT bloc,
+    EX: EXT,
+    LST: INTEGER [0..10, 15..19]
+BEGIN END.

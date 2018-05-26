@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/IPZ.dir/main.cpp.o CMakeFiles/IPZ.dir/lexer/lexer.cpp.o CMakeFiles/IPZ.dir/front_end/out.cpp.o CMakeFiles/IPZ.dir/front_end/error.cpp.o  -o IPZ 
