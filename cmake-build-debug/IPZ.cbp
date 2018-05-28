@@ -105,6 +105,12 @@
 		<Unit filename="/home/dimazdoks/CLionProjects/IPZ/main.cpp">
 			<Option target="IPZ"/>
 		</Unit>
+		<Unit filename="/home/dimazdoks/CLionProjects/IPZ/syntax/syntax.cpp">
+			<Option target="IPZ"/>
+		</Unit>
+		<Unit filename="/home/dimazdoks/CLionProjects/IPZ/syntax/syntax.h">
+			<Option target="IPZ"/>
+		</Unit>
 		<Unit filename="/home/dimazdoks/CLionProjects/IPZ/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

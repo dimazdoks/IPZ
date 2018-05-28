@@ -188,7 +188,7 @@ vector <_token> lexer_main(ifstream &fin) {
                         map_identifiers.insert(pair <string, size_t >(str, code));
                     } else {
                     code = map_identifiers.at(str);
-                    cout << code << endl;
+                    //cout << code << endl;
                 }
 
                 ttBuff = TT_Identifiers;
@@ -208,7 +208,7 @@ vector <_token> lexer_main(ifstream &fin) {
                         map_identifiers.insert(pair <string, size_t >(str, code));
                     } else {
                         code = map_identifiers.at(str);
-                        cout << code << endl;
+                        //cout << code << endl;
                     }
 
                     ttBuff = TT_Identifiers;

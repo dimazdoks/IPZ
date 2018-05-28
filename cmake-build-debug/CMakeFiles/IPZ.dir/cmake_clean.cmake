@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/IPZ.dir/lexer/lexer.cpp.o"
   "CMakeFiles/IPZ.dir/front_end/out.cpp.o"
   "CMakeFiles/IPZ.dir/front_end/error.cpp.o"
+  "CMakeFiles/IPZ.dir/syntax/syntax.cpp.o"
   "IPZ.pdb"
   "IPZ"
 )

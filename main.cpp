@@ -1,5 +1,6 @@
 #include <iostream>
 #include "lexer/lexer.h"
+#include "syntax/syntax.h"
 
 using namespace std;
 
@@ -13,8 +14,9 @@ int main() {
 
     ifstream fin("../input.txt");
     vector_tokens = lexer_main(fin);
-
     lexer_qPrintTokens(vector_tokens);
+    syntax_main(vector_tokens);
+
     fin.close();
 
     unsigned int end_time;

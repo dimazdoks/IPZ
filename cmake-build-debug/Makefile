@@ -231,6 +231,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/IPZ.dir/build.make CMakeFiles/IPZ.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+syntax/syntax.o: syntax/syntax.cpp.o
+
+.PHONY : syntax/syntax.o
+
+# target to build an object file
+syntax/syntax.cpp.o:
+	$(MAKE) -f CMakeFiles/IPZ.dir/build.make CMakeFiles/IPZ.dir/syntax/syntax.cpp.o
+.PHONY : syntax/syntax.cpp.o
+
+syntax/syntax.i: syntax/syntax.cpp.i
+
+.PHONY : syntax/syntax.i
+
+# target to preprocess a source file
+syntax/syntax.cpp.i:
+	$(MAKE) -f CMakeFiles/IPZ.dir/build.make CMakeFiles/IPZ.dir/syntax/syntax.cpp.i
+.PHONY : syntax/syntax.cpp.i
+
+syntax/syntax.s: syntax/syntax.cpp.s
+
+.PHONY : syntax/syntax.s
+
+# target to generate assembly for a file
+syntax/syntax.cpp.s:
+	$(MAKE) -f CMakeFiles/IPZ.dir/build.make CMakeFiles/IPZ.dir/syntax/syntax.cpp.s
+.PHONY : syntax/syntax.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... syntax/syntax.o"
+	@echo "... syntax/syntax.i"
+	@echo "... syntax/syntax.s"
 .PHONY : help
 
 

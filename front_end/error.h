@@ -11,6 +11,7 @@ using namespace std;
 typedef struct _token _token;
 
 void lexer_error(size_t line, size_t column, char ch, vector <_token> &vector_tokens);
+void syntax_error(size_t line, size_t column, string str);
 void lexer_eof();
 
 #endif //IPZ_ERROR_H

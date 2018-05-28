@@ -55,4 +55,14 @@ iostream
 -
 lexer/lexer.h
 /home/dimazdoks/CLionProjects/IPZ/lexer/lexer.h
+syntax/syntax.h
+/home/dimazdoks/CLionProjects/IPZ/syntax/syntax.h
+
+/home/dimazdoks/CLionProjects/IPZ/syntax/syntax.cpp
+syntax.h
+/home/dimazdoks/CLionProjects/IPZ/syntax/syntax.h
+
+/home/dimazdoks/CLionProjects/IPZ/syntax/syntax.h
+../lexer/lexer.h
+/home/dimazdoks/CLionProjects/IPZ/lexer/lexer.h
 

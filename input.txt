@@ -1,23 +1,6 @@
-PROGRAM FOO;
-
+PROGRAM FIRST;
+VAR
+    a, b, c:  INTEGER [1..2,3..8];
+    a, b, c:  INTEGER [1..2,3..8];
 BEGIN
-
-#PEA:9A-32
-#PQW:95-11 #PQW:95-11
-#POI:AA-32
-
-VAR
-VAR
-
-
-gggg
-gggg
-
-ddd1
-ddd1
-
-123
-22
-123
-
 END.
