@@ -1,6 +1,5 @@
 PROGRAM FIRST;
-VAR
-    a, b, c:  INTEGER [1..2,3..8];
-    a, b, c:  INTEGER [1..2,3..8];
+
+var a : [1..2];
 BEGIN
 END.

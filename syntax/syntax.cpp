@@ -5,9 +5,10 @@
 
 void syntax_main(vector <_token> &vector_tokens) {
     int i=0;
-    string padding = "";
+    string padding;
 
     cout<<padding<<"<signal-program>"<<endl;
+
     syntax_signal_program(vector_tokens, i, padding);
     cout<<i<<endl;
 }
@@ -83,17 +84,21 @@ void syntax_variable_declarations(vector <_token> &vector_tokens, int &i, string
     padding += space;
 
     if (vector_tokens[i].code != 402)
-        syntax_error(vector_tokens[i].line, vector_tokens[i].column, "VAR");
+        if (vector_tokens[i].code != 409) {
+            cout<<padding<<"<declarations-list>"<<endl;
+            syntax_declarations_list(vector_tokens, i, padding);
+        } else {
+            cout<<padding<<"<empty>"<<endl;
+        }
     else {
         cout<<padding<<"VAR"<<endl;
         i++;
-    }
-
-    if (vector_tokens[i].code != 409) {
-        cout<<padding<<"<declarations-list>"<<endl;
-        syntax_declarations_list(vector_tokens, i, padding);
-    } else {
-        cout<<padding<<"<empty>"<<endl;
+        if (vector_tokens[i].code != 409) {
+            cout<<padding<<"<declarations-list>"<<endl;
+            syntax_declarations_list(vector_tokens, i, padding);
+        } else {
+            cout<<padding<<"<empty>"<<endl;
+        }
     }
 }
 
@@ -117,7 +122,11 @@ void syntax_declaration(vector <_token> &vector_tokens, int &i, string padding) 
     syntax_variable_identifier(vector_tokens, i, padding);
 
     cout<<padding<<"<identifiers-list>"<<endl;
-    syntax_identifiers_list(vector_tokens, i, padding);
+    if (vector_tokens[i].code != 58)
+        syntax_identifiers_list(vector_tokens, i, padding);
+    else {
+        cout<<padding<<"<empty>"<<endl;
+    }
 
 
     if (vector_tokens[i].code != 58)
@@ -131,7 +140,11 @@ void syntax_declaration(vector <_token> &vector_tokens, int &i, string padding) 
     syntax_attribute(vector_tokens, i, padding);
 
     cout<<padding<<"<attributes-list>"<<endl;
-    syntax_attributes_list(vector_tokens, i, padding);
+    if (vector_tokens[i].code != 59)
+        syntax_identifiers_list(vector_tokens, i, padding);
+    else {
+        cout<<padding<<"<empty>"<<endl;
+    }
 
     if (vector_tokens[i].code != 59)
         syntax_error(vector_tokens[i].line, vector_tokens[i].column, ";");
@@ -155,7 +168,7 @@ void syntax_identifiers_list(vector <_token> &vector_tokens, int &i, string padd
     syntax_variable_identifier(vector_tokens, i, padding);
 
 
-    if (vector_tokens[i].code != 58)
+    if (vector_tokens[i].code != 59)
         syntax_identifiers_list(vector_tokens, i, padding);
     else {
         cout<<padding<<"<empty>"<<endl;
@@ -189,7 +202,12 @@ void syntax_attribute(vector <_token> &vector_tokens, int &i, string padding) {
         syntax_range(vector_tokens, i, padding);
 
         cout<<padding<<"<range-list>"<<endl;
-        syntax_range_list(vector_tokens, i, padding);
+        if (vector_tokens[i].code != 93)
+            syntax_range_list(vector_tokens, i, padding);
+        else {
+            cout<<padding<<"<empty>"<<endl;
+        }
+
 
         if (vector_tokens[i].code != 93)
             syntax_error(vector_tokens[i].line, vector_tokens[i].column, "]");
@@ -264,10 +282,13 @@ void syntax_identifier(vector <_token> &vector_tokens, int &i, string padding) {
 
 void syntax_unsigned_integer(vector <_token> &vector_tokens, int &i, string padding) {
     padding += space;
-    if (vector_tokens[i].code > 1000 && vector_tokens[i].code < 501)
-        syntax_error(vector_tokens[i].line, vector_tokens[i].column, "unsigned-integer");
-    else {
+//    cout<<vector_tokens[i].code<<endl;
+//    cout<<vector_tokens[i].token<<endl;
+
+    if (vector_tokens[i].code <= 1000 && vector_tokens[i].code >= 501) {
         cout<<padding<<vector_tokens[i].token<<endl;
         i++;
+    } else {
+        syntax_error(vector_tokens[i].line, vector_tokens[i].column, "unsigned-integer");
     }
 }
