@@ -258,6 +258,33 @@ syntax/syntax.cpp.s:
 	$(MAKE) -f CMakeFiles/IPZ.dir/build.make CMakeFiles/IPZ.dir/syntax/syntax.cpp.s
 .PHONY : syntax/syntax.cpp.s
 
+tree/tree.o: tree/tree.cpp.o
+
+.PHONY : tree/tree.o
+
+# target to build an object file
+tree/tree.cpp.o:
+	$(MAKE) -f CMakeFiles/IPZ.dir/build.make CMakeFiles/IPZ.dir/tree/tree.cpp.o
+.PHONY : tree/tree.cpp.o
+
+tree/tree.i: tree/tree.cpp.i
+
+.PHONY : tree/tree.i
+
+# target to preprocess a source file
+tree/tree.cpp.i:
+	$(MAKE) -f CMakeFiles/IPZ.dir/build.make CMakeFiles/IPZ.dir/tree/tree.cpp.i
+.PHONY : tree/tree.cpp.i
+
+tree/tree.s: tree/tree.cpp.s
+
+.PHONY : tree/tree.s
+
+# target to generate assembly for a file
+tree/tree.cpp.s:
+	$(MAKE) -f CMakeFiles/IPZ.dir/build.make CMakeFiles/IPZ.dir/tree/tree.cpp.s
+.PHONY : tree/tree.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... syntax/syntax.o"
 	@echo "... syntax/syntax.i"
 	@echo "... syntax/syntax.s"
+	@echo "... tree/tree.o"
+	@echo "... tree/tree.i"
+	@echo "... tree/tree.s"
 .PHONY : help
 
 

@@ -21,10 +21,18 @@ CMakeFiles/IPZ.dir/main.cpp.o: ../front_end/out.h
 CMakeFiles/IPZ.dir/main.cpp.o: ../lexer/lexer.h
 CMakeFiles/IPZ.dir/main.cpp.o: ../main.cpp
 CMakeFiles/IPZ.dir/main.cpp.o: ../syntax/syntax.h
+CMakeFiles/IPZ.dir/main.cpp.o: ../tree/tree.h
 
 CMakeFiles/IPZ.dir/syntax/syntax.cpp.o: ../front_end/error.h
 CMakeFiles/IPZ.dir/syntax/syntax.cpp.o: ../front_end/out.h
 CMakeFiles/IPZ.dir/syntax/syntax.cpp.o: ../lexer/lexer.h
 CMakeFiles/IPZ.dir/syntax/syntax.cpp.o: ../syntax/syntax.cpp
 CMakeFiles/IPZ.dir/syntax/syntax.cpp.o: ../syntax/syntax.h
+CMakeFiles/IPZ.dir/syntax/syntax.cpp.o: ../tree/tree.h
+
+CMakeFiles/IPZ.dir/tree/tree.cpp.o: ../front_end/error.h
+CMakeFiles/IPZ.dir/tree/tree.cpp.o: ../front_end/out.h
+CMakeFiles/IPZ.dir/tree/tree.cpp.o: ../lexer/lexer.h
+CMakeFiles/IPZ.dir/tree/tree.cpp.o: ../tree/tree.cpp
+CMakeFiles/IPZ.dir/tree/tree.cpp.o: ../tree/tree.h
 

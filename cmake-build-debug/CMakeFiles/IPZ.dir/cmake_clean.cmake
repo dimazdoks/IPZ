@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/IPZ.dir/front_end/out.cpp.o"
   "CMakeFiles/IPZ.dir/front_end/error.cpp.o"
   "CMakeFiles/IPZ.dir/syntax/syntax.cpp.o"
+  "CMakeFiles/IPZ.dir/tree/tree.cpp.o"
   "IPZ.pdb"
   "IPZ"
 )

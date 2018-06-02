@@ -53,8 +53,6 @@ algorithm
 /home/dimazdoks/CLionProjects/IPZ/main.cpp
 iostream
 -
-lexer/lexer.h
-/home/dimazdoks/CLionProjects/IPZ/lexer/lexer.h
 syntax/syntax.h
 /home/dimazdoks/CLionProjects/IPZ/syntax/syntax.h
 
@@ -63,6 +61,14 @@ syntax.h
 /home/dimazdoks/CLionProjects/IPZ/syntax/syntax.h
 
 /home/dimazdoks/CLionProjects/IPZ/syntax/syntax.h
+../tree/tree.h
+/home/dimazdoks/CLionProjects/IPZ/tree/tree.h
+
+/home/dimazdoks/CLionProjects/IPZ/tree/tree.cpp
+tree.h
+/home/dimazdoks/CLionProjects/IPZ/tree/tree.h
+
+/home/dimazdoks/CLionProjects/IPZ/tree/tree.h
 ../lexer/lexer.h
 /home/dimazdoks/CLionProjects/IPZ/lexer/lexer.h
 

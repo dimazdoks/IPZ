@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dimazdoks/CLionProjects/IPZ/lexer/lexer.cpp" "/home/dimazdoks/CLionProjects/IPZ/cmake-build-debug/CMakeFiles/IPZ.dir/lexer/lexer.cpp.o"
   "/home/dimazdoks/CLionProjects/IPZ/main.cpp" "/home/dimazdoks/CLionProjects/IPZ/cmake-build-debug/CMakeFiles/IPZ.dir/main.cpp.o"
   "/home/dimazdoks/CLionProjects/IPZ/syntax/syntax.cpp" "/home/dimazdoks/CLionProjects/IPZ/cmake-build-debug/CMakeFiles/IPZ.dir/syntax/syntax.cpp.o"
+  "/home/dimazdoks/CLionProjects/IPZ/tree/tree.cpp" "/home/dimazdoks/CLionProjects/IPZ/cmake-build-debug/CMakeFiles/IPZ.dir/tree/tree.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
